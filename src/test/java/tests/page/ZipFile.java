@@ -9,9 +9,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static utils.Files.readTextFromPath;
 import static utils.Zip.unzip;
 
-public class ZipFileTest {
+public class ZipFile {
 
-    public static void zipTest(String filePathZip, String unzipFolderPath, String unzipTxtFilePath, String expectedDataZip) throws IOException, ZipException {
+    public static void zip(String filePathZip, String unzipFolderPath, String unzipTxtFilePath, String expectedDataZip) throws IOException, ZipException {
         unzip(filePathZip, unzipFolderPath);
         String actualData = readTextFromPath(unzipTxtFilePath);
         assertThat(actualData, containsString(expectedDataZip));

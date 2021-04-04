@@ -31,11 +31,11 @@ public class TestBase {
         String unzipTxtFilePath = "./src/test/resources/files/unzip/1.txt";
         String expectedDataZip = "Test file zip!";
 
-        PdfFileTest.pdfTest(filePathPdf, expectedDataPdf);
-        DocxFileTest.docxTest(docxFile, expectedDataDocx);
-        TxtFileTest.txtTest(filePathTxt, expectedDataTxt);
-        XlsAndXlsxFileTest.xlsTest(filePathXls, expectedDataXls);
-        XlsAndXlsxFileTest.xlsxTest(filePathXlsx, expectedDataXlsx);
-        ZipFileTest.zipTest(filePathZip, unzipFolderPath, unzipTxtFilePath, expectedDataZip);
+        PdfFile.pdf(filePathPdf, expectedDataPdf);
+        DocxFile.docx(docxFile, expectedDataDocx);
+        TxtFile.txt(filePathTxt, expectedDataTxt);
+        XlsAndXlsxFile.xls(filePathXls, expectedDataXls);
+        XlsAndXlsxFile.xlsx(filePathXlsx, expectedDataXlsx);
+        ZipFile.zip(filePathZip, unzipFolderPath, unzipTxtFilePath, expectedDataZip);
     }
 }

@@ -7,9 +7,9 @@ import java.io.IOException;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static utils.Files.getPdf;
 
-public class PdfFileTest {
+public class PdfFile {
 
-    public static void pdfTest(String pdfFilePath, String expectedData) throws IOException {
+    public static void pdf(String pdfFilePath, String expectedData) throws IOException {
         PDF pdf = getPdf(pdfFilePath);
         assertThat(pdf, PDF.containsText(expectedData));
     }
