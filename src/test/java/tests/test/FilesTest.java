@@ -8,7 +8,7 @@ import tests.page.*;
 import java.io.File;
 import java.io.IOException;
 
-public class TestBase {
+public class FilesTest {
 
     String filePathPdf = "./src/test/resources/files/1.pdf";
     String expectedDataPdf = "";
